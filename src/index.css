@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: #f1f1f1;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  background-color: whitesmoke;
+  height: 80px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+header > img {
+  width: 50px;
+}
+header > h1 {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+main {
+  padding: 24px 12px 24px;
+}
+
+.add-ingredient-form {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 12px;
+  height: 38px;
+}
+.add-ingredient-form > input {
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  padding: 9px 13px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
+  min-width: 160px;
+  max-width: 400px;
+  font: 500 0.8rem Inter, sans-serif;
+}
+.add-ingredient-form > button, .state-button, .round-button {
+  border-radius: 8px;
+  border: 1px solid chocolate;
+  padding: 9px;
+  color: whitesmoke;
+  background-color: chocolate;
+  width: 150px;
+  font: 500 0.8rem Inter, sans-serif;
+}
+.add-ingredient-form > button::before {
+  content: "+";
+  margin-right: 5px;
+}
+.add-ingredient-form > div {
+  position: relative;
+  top: 42px;
+  right: 186px;
+}
+
+.round-button {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  position: relative;
+  top: 8px;
+  left: 8px;
+  background-color: dimgray;
+  border-color: dimgray;
+}
+
+section {
+  position: relative;
+  left: 40px;
+}
+.get-recipe-container {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 24px;
+  color: black;
+  background-color: #e1e1e1;
+  font: 500 0.8rem Inter, sans-serif;
+  display: flex;
+  width: 500px;
+  gap: 12px;
+}
+.get-recipe-container > button {
+  border-radius: 8px;
+  border: 1px solid chocolate;
+  padding: 9px;
+  color: whitesmoke;
+  background-color: chocolate;
+  width: 150px;
+  font: 500 0.8rem Inter, sans-serif;
+}
+
+.suggested-recipe-container {
+    font-weight: 500;
+}
+.suggested-recipe-container ul li, .suggested-recipe-container ol li {
+    color: black;
+}
+
+/**
+header box shadow code:
+box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+*/

@@ -1,4 +1,4 @@
-### (AI + Ingredients - React Practice Application)
+### Ingredients → AI Recipe - (React Practice Application)
 
 This app implements the use of React from basic rendering and component modeling to advanced use functions.
 1. Recieves a list of ingredients from users.

@@ -15,7 +15,8 @@ const SYSTEM_PROMPT = `As a creative assistant chef, you suggest recipes based o
 
 // Make sure you set an environment variable in Scrimba 
 // for HF_ACCESS_TOKEN
-const client = new InferenceClient();
+
+const client = new InferenceClient(import.meta.env.VITE_HF_ACCESS);
 
 export async function getRecipeFromMistral(ingredientsArr) {
     const ingredientsString = ingredientsArr.join(", ").toLowerCase();
